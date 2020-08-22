@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Canvas</title>
+<link rel="stylesheet" href="{{url_for('static',filename='canvas.css')}}">
+<link rel="stylesheet" href="trial.css">
+
+</head>
+<center><div id="header"></div></center>
+<div class="predict" id="result" >Predicted Output <i>[ { % prediction % } ]</i></div>
+
+<body bgcolor="#32a845" link="yellow" alink="yellow" vlink="yellow">
+<canvas id="canvas"></canvas>
+
+<button class="button" id="predict" style="color:yellow;"><a href="#" style="text-decoration:none">Predict</a></button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button id="clear" class="button">Clear</button>
+		
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'> </script>
+
+<script src="{{url_for('static',filename='canvas.js')}}"> </script>	
+<script src="canvas.js"></script>
+		
+</body>	   
+</html>
